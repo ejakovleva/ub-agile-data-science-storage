@@ -2,7 +2,7 @@ import os
 import time
 
 import pandas as pd
-import pyarrow.fs as fs
+from pyarrow import fs
 
 s3 = fs.S3FileSystem(endpoint_override=os.environ.get("S3_ENDPOINT"))
 bucket = os.environ.get("S3_BUCKET", "taxi")
