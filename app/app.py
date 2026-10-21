@@ -1,8 +1,8 @@
 import os
 
 import pandas as pd
-import pyarrow.fs as fs
 from flask import Flask
+from pyarrow import fs
 
 app = Flask(__name__)
 

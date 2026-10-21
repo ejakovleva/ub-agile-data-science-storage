@@ -1,7 +1,7 @@
 import os
 
 import pandas as pd
-import pyarrow.fs as fs
+from pyarrow import fs
 
 s3 = fs.S3FileSystem(
     endpoint_override=os.environ.get("S3_ENDPOINT"),
